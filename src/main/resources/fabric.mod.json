@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "asobu",
+  "version": "${version}",
+  "name": "asobu",
+  "description": "This is a test mod.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/asobu/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.cherry_leaves.asobu.client.AsobuDataGenerator"
+    ],
+    "client": [
+      "net.cherry_leaves.asobu.client.AsobuClient"
+    ],
+    "main": [
+      "net.cherry_leaves.asobu.Asobu"
+    ]
+  },
+  "mixins": [
+    "asobu.mixins.json",
+    {
+      "config": "asobu.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
