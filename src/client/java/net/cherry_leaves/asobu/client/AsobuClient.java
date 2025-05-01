@@ -14,7 +14,6 @@ public class AsobuClient implements ClientModInitializer {
     private static KeyBinding showWhiteGuiKey;
     private static KeyBinding showWhiteGuiKey2;
 
-
     @Override
     public void onInitializeClient() {
         String Category1 = "好きにします！！！！！れ！！！！！！！！！！";
